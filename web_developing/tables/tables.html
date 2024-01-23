@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabelid</title>
+        <link rel="stylesheet" type="text/css" href="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/tables/style_table.css">
+    </head>
+    <body>
+        <h1>Tabelid - colspan/rowspan</h1>
+        <table>
+            <caption>Lihtne tabel colspan omadusega</caption>
+            <tr>
+                <td colspan="3">A</td>
+            </tr>
+            <tr>
+                <td class="classb">B</td>
+                <td class="classc">C</td>
+                <td>D</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <caption>Lihtne tabel rowspan omadusega</caption>
+            <tr>
+                <td>A</td>
+                <td rowspan="3">D</td>
+            </tr>
+            <tr>
+                <td class="classb">B</td>
+            </tr>
+            <tr>
+                <td class="classc">C</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="3">EMPTY</td>
+            </tr>
+            <tr>
+                <td>1column</td>
+                <td>2column</td>
+                <td>3column</td>
+            </tr>
+            <tr>
+                <td colspan="2">4column</td>
+                <td>5column</td>
+            </tr>
+            <tr>
+                <td>6column</td>
+                <td colspan="2">7column</td>
+            </tr>
+            <tr class="long">
+                <td rowspan="5">8</td>
+                <td rowspan="5">9</td>
+                <td rowspan="5">10</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table id="teacher">
+            <caption>Opetaja tabel</caption>
+            <tr>
+                <td colspan="5" class="empty">EMPTY</td>
+            </tr>
+            <tr>
+                <td rowspan="3" id="D">D</td>
+                <td colspan="3" id="E">E</td>
+                <td rowspan="4" id="empty1">EMPTY</td>
+            </tr>
+            <tr>
+                <td id="B">B</td>
+                <td id="C">A</td>
+                <td rowspan="2" id="F">F</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="Ca">C</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="empty">EMPTY</td>
+            </tr>
+        </table>
+    </body>
+</html>

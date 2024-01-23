@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{7824063F-FA42-44E8-BC2B-694FBC663E52}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.maakonnad.Android PreferredExecutionTarget="Android.pixel_5_-_api_33" Xamarin.HotReload.DebuggerTimeoutException.maakonnad.Android.HideInfoBar="True" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.2.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="maakonnad/maakonnad/MainPage.xaml.cs">
+    <Files>
+      <File FileName="maakonnad/maakonnad/MainPage.xaml" />
+      <File FileName="maakonnad/maakonnad/MainPage.xaml.cs" Line="39" Column="14" />
+      <File FileName="maakonnad/maakonnad/Maakond.cs" />
+      <File FileName="maakonnad/maakonnad/Maakonnad.xaml" />
+      <File FileName="maakonnad/maakonnad/Maakonnad.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="maakonnad">
+            <Node name="maakonnad" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="Maakonnad.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="maakonnad.Android" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="AboutAssets.txt" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

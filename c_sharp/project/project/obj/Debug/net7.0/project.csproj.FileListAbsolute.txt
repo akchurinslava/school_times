@@ -1,0 +1,15 @@
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.csproj.AssemblyReference.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.AssemblyInfoInputs.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.AssemblyInfo.cs
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.csproj.CoreCompileInputs.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/bin/Debug/net7.0/project
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/bin/Debug/net7.0/project.deps.json
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/bin/Debug/net7.0/project.runtimeconfig.json
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/bin/Debug/net7.0/project.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/bin/Debug/net7.0/project.pdb
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/refint/project.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.pdb
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/project.genruntimeconfig.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/c-/project/project/obj/Debug/net7.0/ref/project.dll

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Küsimustik</title>
+    <link rel="stylesheet" type="text/css" href="/form_style.css">
+    <script src="/form_script.js"></script>
+</head>
+<body>
+    <h1>
+        Ilmateenuste küsimutik
+    </h1>
+    <form name="KusiVorm">
+        <strong><label for="nimi">Sisesta oma nimi:</label></strong>
+        <input type="text" name="nimi" id="nimi" placeholder="Eesnimi" oninput="loe()">
+    <fieldset>
+        <legend>Vali sugu:</legend>
+        <br>
+        <input type="radio" name="sugu" id="mees" value="mees" onchange="loe()">
+        <label for="mees">mees</label>
+        <br>
+        <input type="radio" name="sugu" id="naine" value="naine" onchange="loe()">
+        <label for="naine">naine</label>
+        <br>
+        <input type="radio" name="sugu" id="valimata" value="valimata" onchange="loe()">
+        <label for="valimata">valimata</label>
+        <img src="/no.png" alt="pilt" id="pilt">
+    </fieldset>
+    <strong>
+        Jalgin ilmateated
+    </strong>
+    <br>
+    <input type="checkbox" name="teate" id="ilm1" value="1 kord paevas" onchange="checkboxValik()">
+    <label for="ilm1">1 kord paevas</label>
+    <br>
+    <input type="checkbox" name="teate" id="ilm2" value="1 kord nadalas" onchange="checkboxValik()">
+    <label for="ilm2">1 kord nadalas</label>
+    <br>
+    <input type="checkbox" name="teate" id="ilm3" value="uldse ei vaata" onchange="checkboxValik()">
+    <label for="ilm3">uldse ei vaata</label>
+    <br>
+    <input type="checkbox" name="teate" id="ilm4" value="kui tuleb torm" onchange="checkboxValik()">
+    <label for="ilm4">kui tuleb torm</label>
+    <br>
+    <strong>
+    <label>Milline veebileht sa kasutad ilmateavet vadata?</label>
+    </strong>
+    <br>
+    <select id="veeb" onchange="selectValik()">
+        <option value="www.ilm.ee">www.ilm.ee</option>
+        <option value="www.yr.no">www.yr.no</option>
+        <option value="www.gismeteo.com">www.gismeteo.com</option>
+    </select>
+    <br>
+    <input type="button" value="Loe andmed" onclick="loe()">
+    <input type="reset" value="Puhasta" onclick="kustuta()">
+    <div id="vastus"></div>
+</form>
+</body>
+</html>

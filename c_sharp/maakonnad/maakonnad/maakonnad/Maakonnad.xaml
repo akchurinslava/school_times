@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="maakonnad.Maakonnad"
+    Title="Lisa maakonna">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="nimetusEntry" Placeholder="Maakonna nimi:" Text="{Binding Path=Nimetus}" />
+            <Entry x:Name="pealinnEntry" Placeholder="Pealinna nimi:"  Text="{Binding Path=Pealinn}" />
+            <Entry x:Name="teineLinnEntry" Placeholder="Teise linna nimi:"  Text="{Binding Path=TeineLinn}" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Inimeste arv: " />
+                    <Stepper x:Name="arv_stepper" Minimum="0" Maximum="100000" Increment="100" Value="{Binding Path=InimesteArv}" />
+                         <Label x:Name="arvlbl" FontSize="Large" Text="{Binding Source={x:Reference Name=arv_stepper}, Path=Value}" />
+               
+	        </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Pindala:          " />
+                    <Stepper x:Name="arv_stepper2" Minimum="0" Maximum="10000" Increment="10" Value="{Binding Path=Pindala}" />
+                         <Label x:Name="arvlbl2" FontSize="Large" Text="{Binding Source={x:Reference Name=arv_stepper2}, Path=Value}" />
+	        </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Elanikke:        " />
+                    <Stepper x:Name="arv_stepper3" Minimum="0" Maximum="100000" Increment="100" Value="{Binding Path=Elanikke}" />
+                         <Label x:Name="arvlbl3" FontSize="Large" Text="{Binding Source={x:Reference Name=arv_stepper3}, Path=Value}" />
+	        </StackLayout>
+            <!--<Button Text="salvesta" Clicked="Button_Clicked" />-->
+            <StackLayout>
+                <Button Text="salvesta" Clicked="Button_Clicked" />
+                <Button Text="Salvesta failisse" Clicked="Salvesta_failisse" />
+                <Button Text="Loe failist" Clicked="Loe_failist" />
+                <Button Text="Kustuta faili" Clicked="Kustutu_faili" />
+                <Label x:Name="lbl" />
+	        </StackLayout>
+	    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

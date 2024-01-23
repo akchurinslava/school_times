@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{3E6EB159-EF7E-40BD-BB57-B06F2A93D493}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.time__plan.Android PreferredExecutionTarget="Android.pixel_5_-_api_33" Xamarin.HotReload.DebuggerTimeoutException.time__plan.Android.HideInfoBar="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="time_plan/time_plan/TimePlan.xaml.cs">
+    <Files>
+      <File FileName="time_plan/time_plan/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="time_plan/time_plan/TimePlan.xaml.cs" Line="53" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="time_plan" expanded="True">
+            <Node name="time_plan" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="TimePlan.xaml" expanded="True" />
+            </Node>
+            <Node name="time_plan.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True">
+                  <Node name="EarlyEvening.png" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.2.0" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

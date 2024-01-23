@@ -1,0 +1,37 @@
+// Способ создании меню немного отличается визуально от того, которым пользовались раньше
+function onOpen() {  //Здесь я создал функцию для создания удобной меню в которой будет вкладка моего скрипта
+  let menu = SpreadsheetApp.getUi(); // определил лист и создал переменную меню
+  menu.createMenu('Weather') // создание меню
+    .addItem('Display Weather', 'getWeather') // привязал в менюшку будущий скрипт(функцию) погоды и назвал её Display Weather
+    .addToUi(); // и добавил в пользовательский интерфейс
+}
+
+function getWeather(){
+  const API_KEY = '5e77053809e34d76bc8154959232103';  // создал константу(тк переменная постоянная) в которую поместил ключ API, у каждого пользователя он свой, связан с аккаунтом.
+  let url = 'http://api.weatherapi.com/v1/current.json?key='; //переменная в которой будет содержаться URL сервиса к которому будет происходить get(request) запрос
+  let sheet = SpreadsheetApp.getActiveSheet(); // обращаемся к листу и записываем в переменную
+  let location = sheet.getRange('B1').getValue(); // обратился к ячейку Б1 и вытащил с неё данные, get методом, там хранится название города
+
+  let request = url + API_KEY + '&q=' + location; // Конкатенируем request запрос из переменных
+  let response = UrlFetchApp.fetch(request); // приходит response ответ(диапозон 2хх) успешный
+  let data = JSON.parse(response.getContentText()); // данные в формате json(формат обмена данных)
+
+// см документацию о всех заголовках
+  let weatherData = []; // создаем динамичный массив в который помещаются пушенные загаловки(загаловки приходят к нам от API ответе в формате json)
+  weatherData.push(data.current.temp_c); // температура в цельсиях
+  weatherData.push(data.current.temp_f); // температура в фаренгейтах
+  weatherData.push(data.current.last_updated); // время обновления
+  weatherData.push(data.current.condition.text); // состояние погоды
+  
+
+  let weather = []; // создаем второй динамический массив
+  weather.push(weatherData); //пушим данные из массива weatherData, потому что метод которым мы будем записывать данные в ячейки потом, требуют два динамичных массива
+
+  let icon = data.current.condition.icon; // переменная для иконки статуса погоды в соответствующий столбик
+
+  let targetRange = sheet.getRange('A4:D4'); // задаем диапозон ячеек
+  targetRange.setValues(weather); //устанавливаем значения из нашего массива
+
+  let iconRange = sheet.getRange('E4'); // помещаем иконку в ячейку Е4, что и соответсвует её положению относительно таблицы
+  iconRange.setFormula(`=IMAGE("${icon}")`); // для размещения иконки используется такая конструкция
+}

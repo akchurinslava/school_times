@@ -1,0 +1,32 @@
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/time_plan.deps.json
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/time_plan.dll
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/ref/time_plan.dll
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/time_plan.pdb
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.csproj.AssemblyReference.cache
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.GeneratedMSBuildEditorConfig.editorconfig
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/TimePlan.xaml.g.cs
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.AssemblyInfoInputs.cache
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.AssemblyInfo.cs
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.csproj.CoreCompileInputs.cache
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.dll
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/refint/time_plan.dll
+/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.pdb
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/time_plan.deps.json
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/time_plan.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/ref/time_plan.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/bin/Debug/netstandard2.0/time_plan.pdb
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.csproj.AssemblyReference.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.GeneratedMSBuildEditorConfig.editorconfig
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/TimePlan.xaml.g.cs
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.AssemblyInfoInputs.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.AssemblyInfo.cs
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.csproj.CoreCompileInputs.cache
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/refint/time_plan.dll
+/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan/obj/Debug/netstandard2.0/time_plan.pdb

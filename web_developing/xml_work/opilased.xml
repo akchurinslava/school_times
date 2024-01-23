@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<opilased>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Vjatseslav Aktsurin</nimi>
+        <veebileht>https://vjatseslavaktsurin22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Rainon Kaska</nimi>
+        <veebileht>https://rainonkaska22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Vladimir Dudakov</nimi>
+        <veebileht>https://vladimirdudakov22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Ivan Popljovkin</nimi>
+        <veebileht>https://ivanpopljovkin22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Sevastijan Saaber</nimi>
+        <veebileht>https://sevastijansaaber22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="MA">
+        <nimi>Ivan Ivanenko</nimi>
+        <veebileht>https://ivanivanenko22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Pavel Ivanov</nimi>
+        <veebileht>https://pavelivanov22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="mees" hinne="A">
+        <nimi>Aleksandr Nurk</nimi>
+        <veebileht>https://aleksandrnurk22.thkit.ee/</veebileht>
+        <pilt>man.png</pilt>
+    </opilane>
+
+    <opilane sugu="naine" hinne="MA">
+        <nimi>Anastassia Seljakova</nimi>
+        <veebileht>https://anastassiaseljakova22.thkit.ee/</veebileht>
+        <pilt>woman.png</pilt>
+    </opilane>
+
+    <opilane sugu="naine" hinne="MA">
+        <nimi>Maria-Julia Jarv</nimi>
+        <veebileht>https://maria-juliajarv22.thkit.ee/</veebileht>
+        <pilt>woman.png</pilt>
+    </opilane>
+
+    <opilane sugu="naine" hinne="A">
+        <nimi>Karina Kulakova</nimi>
+        <veebileht>https://karinakulakova22.thkit.ee/</veebileht>
+        <pilt>woman.png</pilt>
+    </opilane>
+
+    <opilane sugu="naine" hinne="MA">
+        <nimi>Olga Petrova</nimi>
+        <veebileht>https://olgapetrova22.thkit.ee/</veebileht>
+        <pilt>woman.png</pilt>
+    </opilane>
+
+    <opilane sugu="naine" hinne="A">
+        <nimi>Arina Nikulina</nimi>
+        <veebileht>https://arinanikulina22.thkit.ee/</veebileht>
+        <pilt>woman.png</pilt>
+    </opilane>
+
+    <opilane sugu="naine" hinne="MA">
+        <nimi>Maria-Julia Jarv</nimi>
+        <veebileht>https://maria-juliajarv22.thkit.ee/</veebileht>
+        <pilt>woman.png</pilt>
+    </opilane>
+
+</opilased>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maakonnad.MainPage"
+	         Title="Maakond">
+
+    <StackLayout>
+        <Button Text="Lisa" Clicked="Button_Clicked" />
+        <ListView x:Name="list" ItemsSource="{Binding}" ItemSelected="list_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+				                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Nimetus}" FontSize="Small" Grid.Column="0" />
+                                <Label Text="{Binding Pealinn}" FontSize="Small" Grid.Column="1" />
+                                <Label Text="{Binding InimesteArv}" FontSize="Small" Grid.Column="2" />
+                                <Label Text="{Binding Pindala}" FontSize="Small" Grid.Column="3" />
+                                <Label Text="{Binding Elanikke}" FontSize="Small" Grid.Column="4" />
+                                <Label Text="{Binding TeineLinn}" FontSize="Small" Grid.Column="5" />
+
+			                </Grid>
+			            </ViewCell.View>
+		            </ViewCell>
+		        </DataTemplate>
+	        </ListView.ItemTemplate>
+	    </ListView>
+        <Button x:Name="btn" Text="Loe failist" Clicked="Loe_failist" />
+    </StackLayout>
+
+</ContentPage>
+

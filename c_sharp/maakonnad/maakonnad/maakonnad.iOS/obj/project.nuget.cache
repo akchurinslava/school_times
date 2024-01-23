@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "FbCjNW9m70xP9pZKvylIGKg2y1u+S2876SUpoHwMasGOy5Y2l6DbqTlironBxITT2wU1hgd93DrApZuUkDq8CA==",
+  "success": true,
+  "projectFilePath": "/Users/my_pc/Desktop/work/github/c_sharp/maakonnad/maakonnad/maakonnad.iOS/maakonnad.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/my_pc/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.essentials/1.8.0/xamarin.essentials.1.8.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.forms/5.0.0.2622/xamarin.forms.5.0.0.2622.nupkg.sha512"
+  ],
+  "logs": []
+}

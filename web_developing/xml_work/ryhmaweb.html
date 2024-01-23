@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style_xml.css">
+    <title>XML töö</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                type: "GET",
+                url: "opilased.xml",
+                dataType: "xml",
+                success: show,
+                error: crash
+            });
+        });
+        var open=true;
+        function show_hide_m(){
+            $('#mees').slideToggle();
+            if(open){
+                open=false;
+                $('#btn1').val('AVA');
+            }else{
+                open=true;
+                $('#btn1').val('PEIDA');
+            }
+        }
+        function show_hide_wm(){
+            $('#naine').slideToggle();
+            if(open){
+                open=false;
+                $('#btn').val('AVA');
+            }else{
+                open=true;
+                $('#btn').val('PEIDA');
+            }
+        }
+        function show(xml) {
+            $(xml).find('opilane').each(function() {
+                var sugu = $(this).attr('sugu');
+                var nimi = $(this).find('nimi').text();
+                var veebileht = $(this).find('veebileht').text();
+                var pilt = $(this).find('pilt').text();
+
+                var $container = $('#' + sugu);
+
+                if ($container.length === 0) {
+                    $container = $('<div id="' + sugu + '"></div>');
+                    $("#ala").append($container);
+                }
+
+                $container.append(
+                    '<h2 class="' + sugu + '">' + nimi + '</h2>' +
+                    '<img src="pildid/' + pilt + '" alt="pilt">' + '<br>' +
+                    '<a href="' + veebileht + '">' + "Veebileht" + '</a>'
+                );
+            });
+        }
+        function crash(){
+            $("#ala").append('<p style="color:red">Viga XML failis!</p>')
+        }
+    </script>
+</head>
+<body>
+<header>TARgv22</header>
+<main>
+    <section id="man">
+        <h2 id="m">Mehed</h2>
+        <div>
+            <div id="mees"></div>
+            <br>
+            <input type="button" value="PEIDA" id="btn1"  onclick="show_hide_m() ">
+        </div>
+    </section>
+    <section id="woman" >
+        <h2 id="n">Naised</h2>
+        <div>
+            <div id="naine"></div>
+            <br>
+            <input type="button" value="PEIDA" id="btn"  onclick="show_hide_wm() ">
+        </div>
+    </section>
+    <footer>
+        <p> &copy; Powered and designed by V.A. </p>
+    </footer>
+</main>
+<br>
+</body>
+</html>

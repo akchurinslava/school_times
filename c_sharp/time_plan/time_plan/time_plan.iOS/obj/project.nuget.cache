@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "FzJ8DdUuSe9tIv5CddyblRBhjuQ9exmLqMXH3dhTxu+rTdNfoF/2ko9f+c/hamb8IbtX3HSyDUDdYmrR1CHP7g==",
+  "success": true,
+  "projectFilePath": "/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/Desktop/i_cloud_drive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan.iOS/time_plan.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/my_pc/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.essentials/1.8.0/xamarin.essentials.1.8.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.forms/5.0.0.2622/xamarin.forms.5.0.0.2622.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.forms.inputkit/4.1.6/xamarin.forms.inputkit.4.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}

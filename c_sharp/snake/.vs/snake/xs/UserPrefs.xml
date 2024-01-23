@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{D03A13E5-8A0F-4B0E-93E5-04CAB077933A}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="snake/Program.cs">
+    <Files>
+      <File FileName="snake/Program.cs" Line="66" Column="18" />
+      <File FileName="snake/FWriter.cs" />
+      <File FileName="snake/Snake.cs" />
+      <File FileName="snake/Score.cs" />
+      <File FileName="snake/HorizontLine.cs" />
+      <File FileName="snake/FoodCreator.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="snake">
+            <Node name="snake">
+              <Node name="resources" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.snake PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

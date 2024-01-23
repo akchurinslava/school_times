@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS katsed</title>
+        <link rel="stylesheet" type="text/css" href="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/forms3/forms3_style.css">
+        <script src="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/forms3/forms3.js"></script>
+    </head>
+    <body onload="randompic()">
+        <div class="back">
+        <div class="global_container">
+        <h1>VÄRSKENDADA LEHT</h1>
+        <img src="'/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/forms3/no.png'" id="random-img" alt="pilt">
+        <br>
+        <label for="valik5">Kes on pildil?</label>
+        <select id="valik5" onchange="imgChoice()">
+            <option>...vali...</option>
+            <option value="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/forms3/man.png'">mees</option>
+            <option value="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/forms3/woman.png">naine</option>
+            <option value="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/forms3/no.png">teadmata</option>
+        </select>
+        <br>
+        <div id="vastus2"></div>
+        <h1>SISETA KOGUS JA VALI VALUUTA</h1>
+        <form name="var1" id="var1">
+        <table>
+            <caption>Valuuta kalkulaator</caption>
+            <tr>
+                <td>
+                    <br>
+                    <input type="radio" name="valuuta" id="dollar" value="dollar" onchange="radioChange(event)">
+                    <label for="dollar">dollar</label>
+                    <br>
+                    <input type="radio" name="valuuta" id="rub" value="rub" onchange="radioChange(event)">
+                    <label for="rub">rub</label>
+                    <br>
+                    <input type="radio" name="valuuta" id="kroon" value="kroon" onchange="radioChange(event)">
+                    <label for="kroon">sek</label>
+                    <br>
+                    <input type="radio" name="valuuta" id="frank" value="frank" onchange="radioChange(event)">
+                    <label for="frank">frank</label>
+                    <br>
+                </td>
+                <td class="centr">
+                    <label for="valik">Vali valuuta:</label>
+                    <select id="valik" onchange="selectOptionChange(event)">
+                        <option>...vali...</option>
+                        <option value="dollar">Dollar</option>
+                        <option value="rub">Rub</option>
+                        <option value="kroon">Sek</option>
+                        <option value="frank">Frank</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="mark4" name="mark4" oninput="m4()">
+                </td>
+                <td>
+                    <input type="checkbox" name="currency" id="currency1" value="dollar" onchange="mycheckbox()">
+                    <label for="currency1">Dollar</label>
+                    <br>
+                    <input type="checkbox" name="currency" id="currency2" value="rub" onchange="mycheckbox()">
+                    <label for="currency2">Rub</label>
+                    <br>
+                    <input type="checkbox" name="currency" id="currency3" value="kroon" onchange="mycheckbox()">
+                    <label for="currency3">Sek</label>
+                    <br>
+                    <input type="checkbox" name="currency" id="currency4" value="frank" onchange="mycheckbox()">
+                    <label for="currency4">Frank</label>
+                </td>
+            </tr>
+            <tr class="centr">
+                <td colspan="3"><label for="kogus">Kogus:</label>
+                <input type="text" id="kogus" name="kogus" oninput="input_change()">
+                <div id="vastus"></div>
+                <div id="object">
+                <input type="button" value="OK" onclick="validateForm()">
+                <input type="reset" value="Puhasta" onclick="puhasta_delete()">
+                </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    </div>
+    </body>
+</html>

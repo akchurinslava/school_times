@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+
+        var lahti = true;
+        function hide_ava(){
+            $('#text').slideToggle();
+            if(lahti){
+                lahti=false;
+                $('#nupp').val("show");
+            } else {
+                lahti=true;
+                $('#nupp').val("hide");
+            }
+        }
+
+        function orange(){
+            //div text color = orange;
+            $('#text, h2').css('color', 'orange');
+        }
+
+        function black(){
+            //div text color = orange;
+            $('#text, h2').css('color', 'black');
+        }
+
+        function liigutus(event, ui){
+            var asukoht=ui.offset;
+            $("#vastusekiht").html(asukoht.top+" "+asukoht.left);
+        }
+
+        function start(){
+            $('#text, h2').mouseenter(orange);
+            $('#text, h2').mouseleave(black);
+            $("#ala").draggable();
+            $("#ala").bind("drag", liigutus);
+        }
+
+    </script>
+</head>
+<body onload="start()">   
+        <h2>jQuery</h2>
+        <ol>   
+            <li>jQuery CDN - library</li>
+            <li>lisame minified link head osa sisse</li>
+        </ol>  
+        <div id="text" style="position: relative;left:0px; width: 200px; border: solid 1px;">
+            <p>jQuery is the one of best ways for JavaScript's framework using</p>
+        </div>
+        <input type="button" value="toright" onclick="$('#text').animate({left: '600px'}, 1000)"> 
+        <input type="button" value="toleft" onclick="$('#text').animate({left: '0px'}, 1000)">
+        <input type="button" value="hide" id="nupp" onclick="hide_ava()">
+        <br>
+        <div id="vastusekiht">vastus</div>
+        <img src="/Users/my_pc/Library/Mobile Documents/com~apple~CloudDocs/iCloud Drive/work/programming/github/html_css/jQuery/JavaScript-Logo.png" id="ala">    
+</body>
+</html>

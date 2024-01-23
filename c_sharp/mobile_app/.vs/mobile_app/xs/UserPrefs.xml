@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{BAFD1B0E-D775-4A63-972E-11C451CD570B}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.mobile__app.Android PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.2.0" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/my_pc/Library/Caches/VisualStudio/17.0/Symbols/raw.githubusercontent.com/mono/mono/d9a6e8710b37cd7f16cf52eff4f772556e57cc41</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.Workbench ActiveDocument="mobile_app/TablePage.xaml.cs">
+    <Files>
+      <File FileName="mobile_app/WordleEestiNav.xaml.cs" />
+      <File FileName="mobile_app/WordleEesti.xaml.cs" />
+      <File FileName="mobile_app/TablePage.xaml" />
+      <File FileName="mobile_app/TablePage.xaml.cs" Line="7" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="mobile_app">
+            <Node name="mobile_app">
+              <Node name="TablePage.xaml" expanded="True" />
+              <Node name="WordleEesti.xaml" expanded="True" />
+              <Node name="WordleEestiNav.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

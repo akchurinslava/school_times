@@ -1,0 +1,166 @@
+body{
+    color: #EFEEF5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    box-sizing: border-box;
+
+}
+
+.global_container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 115%;
+}
+
+.back{
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, #009fff, #ec2f4b);
+    border-radius: 60px;
+    width: 45em;
+}
+
+h1{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    padding: 8px;
+}
+
+.column1 {
+    flex: 200%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.column2 {
+    flex: 50%;
+    padding: 10px;
+}
+
+.row2 {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    text-align: right;
+}
+
+#final{
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    
+}
+
+#answer_final{
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    padding: 2%;
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+/*
+#name{
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    text-align: center;
+}
+
+#level{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+}
+
+#languages{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+}
+
+#salary{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+}
+
+#final{
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    text-align: center;
+}
+
+#answer_name{
+    position: relative;
+    left:56%;
+    top:-18px;
+}
+
+#answer_age{
+    position: relative;
+    left:56%;
+    top:-18px;
+}
+
+#answer_exp{
+    position: relative;
+    left:56%;
+    top:-18px;
+}
+
+#answer_lang{
+    position: relative;
+    left:56%;
+    top:-18px;
+
+}
+
+#answer_salary{
+    position: relative;
+    left:56%;
+    top:-18px;
+}
+
+#answer_final{
+    position: relative;
+    left:56%;
+    top:-18px;
+}*/
+

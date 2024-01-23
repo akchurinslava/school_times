@@ -1,0 +1,72 @@
+table{
+    width: 50%;
+    border:  1pt groove grey; /*groove, dashed, dotted*/
+    text-align: center;
+}
+
+td{
+    border:  1pt groove grey;
+    text-align: center;
+}
+
+table caption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+.classb{
+    background-color: aqua;
+}
+
+.classc{
+    background-color: goldenrod;
+}
+
+.long{
+    height: 100px;
+}
+
+#teacher{
+    height: 500pt;
+    width: 500pt;
+}
+
+.empty{
+    background-color: blue;
+    height: 3%;
+}
+
+#E{
+    background-color: goldenrod;
+    height: 2%;
+}
+
+#F{
+    background-color: red;
+    width: 20%;
+}
+
+#A{
+    background-color: aqua;
+}
+
+#B{
+    background-color: bisque;
+    width: 90px;
+}
+
+#Ca{
+    background-color: grey;
+    width: 90px;
+    height: 2%;
+}
+
+#empty1{
+    background-color: blue;
+    width: 130px;
+}
+
+#D{
+    background-color: rgb(255, 0, 132);
+    width: 20%;
+}

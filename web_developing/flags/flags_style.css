@@ -1,0 +1,143 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+table{    margin: 0;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#rootsi{
+    width: 330px;
+    height: 210px;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+
+#rootsi tr:nth-child(2){
+    background-color: yellow;
+    height: 20%;
+}
+
+#rootsi tr:nth-child(1) td:nth-child(1),
+#rootsi tr:nth-child(3) td:nth-child(1){
+    background-color: blue;
+    width: 20%;
+}
+
+#rootsi tr:nth-child(1) td:nth-child(2),
+#rootsi tr:nth-child(3) td:nth-child(2){
+    background-color: yellow;
+    width: 16%;
+}
+
+#rootsi tr:nth-child(1) td:nth-child(3),
+#rootsi tr:nth-child(3) td:nth-child(3){
+    background-color: blue;
+
+}
+
+#sveits{
+    width: 300px;
+    height: 300px;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#sveits tr:nth-child(1),
+#sveits tr:nth-child(5){
+    background-color: red;
+}
+
+#sveits tr:nth-child(2) td:nth-child(1),
+#sveits tr:nth-child(2) td:nth-child(3),
+#sveits tr:nth-child(4) td:nth-child(1),
+#sveits tr:nth-child(4) td:nth-child(3){
+    background-color: red;
+    width: 41%;
+    height: 22%;
+
+}
+
+#sveits tr:nth-child(3) td:nth-child(1),
+#sveits tr:nth-child(3) td:nth-child(5){
+    background-color: red;
+    width: 18%;
+    height: 15%;
+}
+
+
+#greeka{
+    width: 400px;
+    height: 200px;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#greeka tr:nth-child(9),
+#greeka tr:nth-child(7){
+    background-color: blue;
+}
+
+#greeka tr:nth-child(1) td:nth-child(1),
+#greeka tr:nth-child(2) td:nth-child(1),
+#greeka tr:nth-child(4) td:nth-child(1),
+#greeka tr:nth-child(5) td:nth-child(1){
+    background-color: blue;
+    width: 13%;
+    height: 11%;
+}
+
+#greeka tr:nth-child(1) td:nth-child(3),
+#greeka tr:nth-child(5) td:nth-child(3){
+    background-color: blue;
+    width: 82%;
+
+}
+
+#greeka tr:nth-child(3) td:nth-child(4){
+    background-color: blue;
+    width: 70%;
+}
+
+#greeka tr:nth-child(2) td:nth-child(3),
+#greeka tr:nth-child(4) td:nth-child(3){
+    background-color: blue;
+}
+#taani{
+    width: 350px;
+    height: 210px;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#taani tr:nth-child(2){
+    height: 14%;
+}
+
+#taani tr:nth-child(1) td:nth-child(1),
+#taani tr:nth-child(3) td:nth-child(1){
+    background-color: red;
+    width: 30%;
+}
+
+#taani tr:nth-child(1) td:nth-child(2),
+#taani tr:nth-child(3) td:nth-child(2){
+    width: 10%;
+}
+
+#taani tr:nth-child(1) td:nth-child(3),
+#taani tr:nth-child(3) td:nth-child(3){
+    background-color: red;
+
+}

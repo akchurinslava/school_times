@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="time_plan.iOS.app/time_plan.iOS">
+      <BCSymbolMapName>time_plan.iOS.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>time_plan.iOS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>time_plan.iOS.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/my_pc/Desktop/iCloudDrive/devorg_ou/programming/github/c_sharp/time_plan/time_plan/time_plan.iOS</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

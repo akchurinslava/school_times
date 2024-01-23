@@ -1,0 +1,330 @@
+function myFunction() {
+  var sheet=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
+  var text="Good evening!";
+  var rr=sheet.getRange("A1").setValue(text);
+}
+function myTable() {
+
+  // название листа - test
+  var leht=SpreadsheetApp.getActiveSpreadsheet();
+  var lehtNimi=leht.getSheetByName("test");
+
+  var tekst="Tere päevast!";
+  // на листе с именем test в ячейку С1
+  var lahter=lehtNimi.getRange("C1").setValue(tekst);
+  
+}
+
+function myygihind(hind, soodus){
+  // muugihinna leidmine
+let mhind = hind -(hind * soodus);
+
+let dollarUS=Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+return dollarUS.format(mhind);
+}
+
+function onOpen(){
+  var spreadsheet= SpreadsheetApp.getActive();
+  var menuItems=[
+    {name: 'C1TereTulemast', functionName: 'myTable'},
+    {name: 'GoodEvening', functionName: 'myFunction'},
+    {name: 'myygihind', functionName: 'myygihind'},
+    {name: 'minuTable', functionName: 'tableSheet'},
+    {name:'lisaDataBase', functionName: 'lisaDataBase'}
+  ];
+  // tabelis lisatakse uus menuu nimega Slava
+  spreadsheet.addMenu('Slava', menuItems);
+}
+
+function tableSheet(){
+  var spreadsheet= SpreadsheetApp.getActiveSheet().setName('test');
+  var headers=[
+    'Nimi', 'Palk', 'Telefon'];
+  var data=[
+      'Slava', '9999', '77777'];
+spreadsheet.getRange('E1:G1').setValues([headers]).setFontWeight('bold');
+spreadsheet.getRange('E2:G2').setValues([data]);
+
+spreadsheet.setFrozenRows(1);
+spreadsheet.autoResizeColumns(5,7);
+  
+
+}
+
+
+function lisaDataBase(){
+    var sheet1=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("data");
+    var sheet2=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("andmebaas");
+
+    var values=sheet1.getRange(2, 1, 1, 5).getValues()
+    Logger.log(values);
+    // viimane rida
+    vr = sheet2.getLastRow();
+    //viimane veerg
+    vveerg=sheet2.getLastColumn();
+    // getValues - 
+    var values=sheet2.getRange(vr+1, 1, 1, vveerg).setValues(values);
+}
+
+
+function nr1() {
+  var page=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Kodutoo");
+  var headers=[
+    'Nimetus', 'Hind', 'Hind Kaibemaksuga', 'KM'];
+  var km=[
+    1.2*0.2, 2.5*0.2, 1*0.2];
+  var range=page.getRange('A2:A4')
+  var range2=page.getRange('B2:B4')
+  var range3=page.getRange('C2:C4')
+  var range4=page.getRange('D2:D4')
+  
+page.getRange('A1:D1').setValues([headers]).setFontWeight('bold');
+range.setValues([
+  ['Piim'],
+  ['Kommid'],
+  ['Coca-Cola'],
+]);
+range2.setValues([
+  [1.2],
+  [2.5],
+  [1],
+]);
+range3.setValues([
+  [1.2*1.2],
+  [2.5*1.2],
+  [1*1.2],
+]);
+range4.setValues([
+  [1.2*0.2],
+  [2.5*0.2],
+  [1*0.2],
+]);
+page.getRange('A1:D4').setBorder(true, true, true, true, true, true, "black", SpreadsheetApp.BorderStyle.SOLID);
+}
+
+function menu2(){
+  var spreadsheet= SpreadsheetApp.getActive();
+  var menuItems=[
+    {name: 'KodutooFunction', functionName: 'nr1'},
+  ];
+  // tabelis lisatakse uus menuu nimega Slava
+  spreadsheet.addMenu('KodutooMenu', menuItems);
+}
+
+function tabeliKujundus() {
+  var leht = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("sht1");
+
+  //borders
+  leht.getRange("A1:D10").setBorder(true, true, true, true, true, true, "pink", SpreadsheetApp.BorderStyle.SOLID_THINK);
+
+  //table head
+  var range1=SpreadsheetApp.getActive().getRange("A1:D1");
+  var mystyle=SpreadsheetApp.newTextStyle()
+  .setForegroundColor("green")
+  .setFontSize(20)
+  .setFontFamily("Arial")
+  .setBold(true)
+  .setUnderline(true)
+  .build();
+  range1.setTextStyle(mystyle);
+}
+
+
+function keeletolk(){
+  var tekst="Hello, friend!",
+  tekst_language="en",
+  language_translate="es";
+
+  tekst=LanguageApp.translate(
+    tekst, tekst_language, language_translate
+  );
+  Logger.log(tekst);
+}
+
+
+
+
+
+// Функция onEdit является триггером, который срабатывает при завершении ввода данных в ячейку Таблицы пользователем
+// https://developers.google.com/apps-script/guides/triggers/#onedite
+function onEdit(e) {
+  Logger.log(e);
+ 
+  // Получаем диапазон ячеек, в которых произошли изменения
+  // https://developers.google.com/apps-script/reference/spreadsheet/range
+  var range = e.range;
+ 
+  // Лист, на котором производились изменения
+  // https://developers.google.com/apps-script/reference/spreadsheet/sheet
+  var sheet = range.getSheet();
+ 
+  // Проверяем, нужный ли это нам лист
+  Logger.log(sheet.getName());
+  if (sheet.getName() != 'Перевод текста') {
+    return false;
+  }
+ 
+  // Переводить необходимо текст, введённый только в первую колонку.
+  // Проверяем стартовую позицию диапазона
+  Logger.log(range.getColumn());
+  if  (range.getColumn() != 1) {
+    return false;
+  }
+ 
+  for (var i = 1; i <= range.getNumRows(); i++) {
+    var cell = range.getCell(
+      i, // номер строки
+      1 // номер колонки
+    );
+ 
+    // Получаем текст на русском
+    var russianText = cell.getValue();
+ 
+    // Переводим текст на английский
+    // https://developers.google.com/apps-script/reference/language/language-app
+    var translatedText = LanguageApp.translate(
+      russianText, // текст
+      'ru', // с какого языка переводим
+      'en' // на какой язык переводим
+    );
+ 
+    // Вставляем переведённый текст во вторую колонку
+    sheet.getRange(
+      cell.getRowIndex(), // номер строки
+      2 // номер столбца
+    ).setValue(translatedText);
+  }
+      // Переводим текст на английский
+    // https://developers.google.com/apps-script/reference/language/language-app
+    var translatedText = LanguageApp.translate(
+      russianText, // текст
+      'ru', // с какого языка переводим
+      'de' // на какой язык переводим
+    );
+ 
+    // Вставляем переведённый текст во вторую колонку
+    sheet.getRange(
+      cell.getRowIndex(), // номер строки
+      3 // номер столбца
+    ).setValue(translatedText);
+  }
+
+function sidebar() {
+  var ui = SpreadsheetApp.getUi();
+
+  var result = ui.alert(
+     '"Tallinna Tööstushariduskeskuses on võimalik õppida eesti kui vene keeles. Põhihariduse baasil õppima asudes  on võimalik omandada kutsekeskharidus 3 aastaga. Keskhariduse baasil on võimalus õppida erialadel päevases kui ka kaugõppes. Kutseharidus omandatakse 0.5-2 aastaga."',
+      ui.ButtonSet.YES_NO);
+}
+
+
+
+
+
+
+
+
+function menu_kontroll(){
+  var spreadsheet= SpreadsheetApp.getActive();
+  var menuItems=[
+    {name: 'SideBar', functionName: 'sidebar'},
+    {name: 'Dialog', functionName: 'dialog'},
+    {name: 'UusLeht', functionName: 'uusleht'},
+    {name: 'Tabelipais', functionName: 'tabelipais'},
+    {name: 'Andmed', functionName: 'andmed'},
+    {name: 'Kokku', functionName: 'kokku'},
+    {name: 'Kustuta', functionName: 'kustuta'},
+    {name: 'Final', functionName: 'final'}
+  ];
+  spreadsheet.addMenu('Kontroll', menuItems);
+}
+
+
+function dialog() {
+  var ui = SpreadsheetApp.getUi();
+
+  var result = ui.prompt(
+      'Какой день недели?',
+      ui.ButtonSet.OK_CANCEL);
+
+  var button = result.getSelectedButton();
+  var text = result.getResponseText();
+  if (button == 'Среда') {
+    ui.alert('Да ты прав');
+  } else{
+    ui.alert('Ты не прав!');
+  }
+}
+
+
+function uusleht(){
+
+  var source = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = source.getSheets()[0];
+
+sheet.copyTo(source).setName('НОВЫЙ ЛИСТ');
+
+}
+
+
+
+function tabelipais() {
+  var page=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  var headers=[
+    'Naised', 'Mehed', 'Kokku häält'];
+
+page.getRange('A1:C1').setValues([headers]).setFontWeight('bold').setBackground('yellow');
+}
+
+
+function andmed(){
+  var rand=Math.random()*200
+  var randt=Math.random()*300
+  var page=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  page.getRange('A2').setValue([rand]);
+  page.getRange('B2').setValue([randt]);
+
+}
+
+function kokku(){
+  var page=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  var a = SpreadsheetApp.getActiveSheet().getRange('A2').getValue();
+  var b = SpreadsheetApp.getActiveSheet().getRange('B2').getValue();
+  var c = a + b
+  var c1 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  c1.getRange('C2').setValue([c]);
+  page.getRange('A1:C2').setBorder(true, true, true, true, true, true, "black", SpreadsheetApp.BorderStyle.SOLID);
+
+}
+
+
+
+function kustuta() {
+ var range = SpreadsheetApp
+               .getActive()
+               .getSheetByName("KontrollTest")
+               .getRange('A1:C2').setBorder(false, false, false, false, false, false).setBackground('white');
+ range.clearContent();
+}
+
+
+function final(){
+  var page=SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  var a = SpreadsheetApp.getActiveSheet().getRange('A2').getValue();
+  var b = SpreadsheetApp.getActiveSheet().getRange('B2').getValue();
+  var c = SpreadsheetApp.getActiveSheet().getRange('C2').getValue();
+  var headers=[
+    'Naised in %', 'Mehed in %',];
+  page.getRange('D1:E1').setValues([headers]).setFontWeight('bold').setBackground('yellow');
+  a1 = a*100/c
+  b1=b*100/c
+  var a2 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  var b2 = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("KontrollTest");
+  a2.getRange('D2').setValue([a1]);
+  b2.getRange('E2').setValue([b1]);
+  page.getRange('D1:E2').setBorder(true, true, true, true, true, true, "black", SpreadsheetApp.BorderStyle.SOLID);
+  
+}

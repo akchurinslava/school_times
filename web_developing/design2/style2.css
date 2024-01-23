@@ -1,0 +1,209 @@
+body{
+    color: #EFEEF5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+}
+
+/*.intro{
+    height: 874px;
+}*/
+
+header{
+    position: absolute;
+    top:25%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 12px;
+  }
+
+
+
+
+nav ul{
+    position: absolute;
+    text-align: center;
+    top:1%;
+    left: 65%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+nav{
+    color: #FFF;
+    float: right;
+    margin:30px 90px;
+  }
+nav ul li {
+    float: left;
+    transition: .3s;
+  }
+nav ul li a{
+    text-decoration: none;
+    color: #EFEEF5;
+    transition: 0.5ms;
+    font-size: 15px;
+    margin-left:16px;
+  }
+nav ul li:hover a{
+    text-decoration: none;
+    color: #f80202;
+  }
+nav ul li:hover{
+
+    text-decoration: none;
+    transform: skew(15deg);
+  }
+
+
+main{
+    margin-top: 2%;
+}
+
+
+
+#osa1{
+    margin-left: 2%;
+    width: 20%;
+    height: 200px;
+    padding: 2%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 62%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: #fd059a;
+    font-variant: small-caps;
+}
+
+#osa2{
+    margin-left: 2%;
+    width: 20%;
+    height: 200px;
+    padding: 2%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 34%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    font-style: italic;
+    
+}
+
+#sec1{
+    position: absolute;
+    top:32%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.logo{
+    position: absolute;
+    top:32%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+#sec4{
+    position: absolute;
+    top:34%;
+    left: -2%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: larger;
+}
+
+ol{
+    list-style-type: none;
+    font-style: italic;
+}
+
+ol li:hover{
+    font-weight: 900;
+    font-size: large;
+}
+
+ol a:active, ol a:visited, ol a:link{
+    text-decoration: none;
+    color: #fd059a;
+    font-variant: small-caps;
+}
+
+ol a:hover{
+    text-decoration: underline;
+}
+
+#osa1 li:hover{
+    font-weight: 900;
+    font-size: large;
+}
+
+#osa1 a:active, #osa1 a:visited, #osa1 a:link{
+    text-decoration: none;
+    color: #fd059a;
+    font-variant: small-caps;
+}
+
+#osa1 a:hover{
+    text-decoration: underline;
+}
+
+#osa2 li:hover{
+    font-weight: 900;
+    font-size: large;
+}
+
+#osa2 a:active, #osa2 a:visited, #osa2 a:link{
+    text-decoration: none;
+    color: #fd059a;
+    font-variant: small-caps;
+}
+
+#osa2 a:hover{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: #fd059a;
+    font-variant: small-caps;
+}
+
+footer{
+    font-style: italic;
+    font-weight: 900;
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    right: 0;
+    color:#f80202;
+    text-align: right;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+

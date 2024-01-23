@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "m0kk65sUsPeeHQVDHt2AyNpTAh1cg22ukUi++rUfFvaZR9fYzlZMBHChpLqaOTXLscTHMKN5LHz4qO8p/CAkdg==",
+  "success": true,
+  "projectFilePath": "/Users/my_pc/Desktop/work/github/c_sharp/mobile_app/mobile_app/mobile_app.csproj",
+  "expectedPackageFiles": [
+    "/Users/my_pc/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xam.plugins.messaging/5.2.0/xam.plugins.messaging.5.2.0.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.essentials/1.8.1/xamarin.essentials.1.8.1.nupkg.sha512",
+    "/Users/my_pc/.nuget/packages/xamarin.forms/5.0.0.2622/xamarin.forms.5.0.0.2622.nupkg.sha512"
+  ],
+  "logs": []
+}

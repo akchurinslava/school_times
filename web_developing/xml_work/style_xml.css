@@ -1,0 +1,110 @@
+body{
+    color: #EFEEF5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+header{
+    position: absolute;
+    top:2%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 12px;
+    font-size: 50px;
+}
+
+img{
+    width:100px;
+}
+
+h2{
+    font-size: x-large;
+}
+
+#m{
+    font-style: italic;
+}
+
+#n{
+    font-style: italic;
+}
+#mees{
+    color: rgba(214, 219, 217, 0.42);
+}
+
+#man{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#woman{
+    text-align: center;
+    margin-top: 3%;
+}
+
+#naine{
+    color: #c587c2;
+}
+
+a:hover{
+    color: #808a98;
+}
+
+#btn{
+    font-size: larger;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+#btn1{
+    font-size: larger;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+a{
+    background-color: rgba(214, 219, 217, 0.42);
+    border: solid;
+    border-radius: 60px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer{
+    font-style: italic;
+    font-weight: 900;
+    bottom: -2%;
+    left: 0;
+    right: 0;
+    color:#f80202;
+    text-align: right;
+    height: auto;
+    width: 100vw;
+}

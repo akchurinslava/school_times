@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="et">
+<head>
+    <title>Vjatseslav Koduleht</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		function liigutus(event, ui){
+            var asukoht=ui.offset;
+            $("#vastusekiht").html(asukoht.top+" "+asukoht.left);
+        }
+        var lahti=true;
+        function peida_ava(){
+            $('#sec').slideToggle();
+            if(lahti){
+                lahti=false;
+                $('#nupp').val('open');
+            }else{
+                lahti=true;
+                $('#nupp').val('hide');
+            }
+        }
+        function punane(){
+            $('#sec').css('color','red');
+        }
+        function must(){
+            $('#sec').css('color','black');
+        }
+        function start(){
+
+            $('#sec').mouseenter(punane);
+            $('#sec').mouseleave(must);
+            $("#ala").draggable();
+            $("#ala").bind("drag", liigutus);
+
+        }
+
+
+	</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="start()">
+<header>
+    <h1>Vjatseslav Koduleht</h1>
+    <h2>Veebirakenduste tööde leht</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">AVALEHT</a></li>
+        <li><a href="tood.html">TÖÖDE LINGID</a></li>
+        <li><a href="materjalid.html">ÕPPEMATERJALID</a></li>
+        <li><a href="https://vjatseslavaktsurin22.thkit.ee/wp/">WORDPRESS PORTFOOLIO</a></li>
+        <li><a href="phpdcs/index.php">PHP</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="sec1">
+        <h2>Sisu1</h2>
+        <div id="sec">
+            NATUKENE ENDAST...
+        </div>
+        <input type="button" value="right" onclick="$('#sec').animate({left: '600px'}, 1000)">
+		<input type="button" value="left" onclick="$('#sec').animate({left: '0px'}, 1000)">
+		<input type="button" value="hide" id="nupp"  onclick="peida_ava() ">
+    </section>
+    <section id="sec2">
+        <h2>Ilus päike</h2>
+        <div>
+            <img src="sun.png" id="ala" alt="päike pilt">
+        </div>
+        <div id="vastusekiht" >coordinates</div>
+    </section>
+</main>
+    <footer>
+        <p>&copy; Powered and designed by V.A. </p>
+    </footer>
+</body>
+</html>

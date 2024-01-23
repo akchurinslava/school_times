@@ -1,0 +1,592 @@
+Sub Macro1()'' Macro1 Macro''    Range("E8").Select    ActiveCell.FormulaR1C1 = "Monday"    Range("E9").Select    ActiveCell.FormulaR1C1 = "Tuesday"    Range("E8:E9").Select    Selection.AutoFill Destination:=Range("E8:E14"), Type:=xlFillDefault    Range("E8:E14").SelectEnd SubSub Macro4()'' Macro4 Macro''    ActiveCell.FormulaR1C1 = "=TODAY()"    Range("D21").SelectEnd SubSub Macro5()'' Macro5 Macro''    Selection.ClearContentsEnd SubFunction newpi()    newpi = 3.14End FunctionFunction doubl(arv As Double) As Doubledoubl = arv * 2End FunctionFunction korrutis(arv1, arv2 As Double) As Doublekorrutis = Math.Round(arv1 * arv2, 3)'3 - p‰rast koma numbrite arvEnd FunctionFunction kolmnurPindala(alus, korgus As Double) As Double    Const k = 1 / 2    kolmnurPindala = alus * korgus * kEnd FunctionFunction kolmnurkPindala2(alus, korgus)    kolmnurkPindala2 = alus * korgus * 1 / 2        End FunctionFunction ilm(temp As Integer) As StringIf temp <= 15 Then    ilm = "kulm"    Else    ilm = "soe"End IfEnd FunctionFunction ilmabra(temp As Integer) As StringIf temp <= 15 Then    ilmabra = "kulm"    Else    If temp < 25 Then    ilmabra = "soe"    Else    If temp >= 25 Then    ilmabra = "palav"End IfEnd IfEnd IfEnd FunctionFunction hinne(punktid)If punktid >= 90 Then    hinne = "5"Else    If punktid >= 75 And punktid <= 89 Then        hinne = "4"    Else        If punktid >= 60 And punktid <= 74 Then            hinne = "3"        Else            If punktid < 60 Then                hinne = "2"            End If        End If    End IfEnd IfEnd FunctionFunction hinne2(punktid, maxpunktid) As StringDim p As Doublek = punktid * 100 / maxpunktidp = Math.Round(k, 2)If p >= 90 Then    hinne2 = Math.Round(p, 2) & "hinne 5"    ElseIf p >= 75 And p <= 89 Then        hinne2 = Math.Round(p, 2) & "hinne 4"    ElseIf p >= 60 And p <= 74 Then            hinne2 = Math.Round(p, 2) & "hinne 3"        ElseIf p < 60 Then                hinne2 = Math.Round(p, 2) & "hinne 2"End IfEnd FunctionFunction paarisArv(arv)If arv Mod 2 = 1 Then    paarisArv = "paaritu"Else    paarisArv = "paaris"End IfEnd FunctionFunction EsimeneTaht(tekst As String) As String    EsimeneTaht = Left(tekst, 1)End FunctionFunction separ(tekst)separ = Left(tekst, InStr(tekst, " "))End FunctionFunction separ2(tekst)separ2 = Right(tekst, Len(tekst) - InStr(tekst, " "))End FunctionFunction hypotintriangle(a, b) As Integera1 = a ^ 2b1 = b ^ 2hypotintriangle = a1 + b1End FunctionFunction flacon(H, D) As Integerp = 3.1415926535d1 = D ^ 2flacon = H * p * d1 / 4End FunctionFunction forge(graadid) As StringIf graadid <= 150 Then    forge = "1"ElseIf graadid <= 175 Then         forge = "2"    ElseIf graadid <= 200 Then             forge = "3"        ElseIf graadid <= 225 Then                forge = "4"            ElseIf graadid > 225 Then                    forge = "5"                    End IfEnd FunctionFunction plaat(plaad, lagi) As Integera = plaad ^ 2plaat = lagi / aEnd FunctionFunction height(kasvu) As StringIf kasvu <= 150 Then    height = "madal"ElseIf kasvu <= 185 Then         height = "keskmine"    ElseIf kasvu <= 200 Then             height = "pikk"                    End IfEnd FunctionFunction rectangle(a, b) As Integerrectangle = 2 * (a + b)End FunctionFunction birthday(tekst) As Stringa = Mid(tekst, 2, 2)b = Mid(tekst, 4, 2)c = Mid(tekst, 6, 2)birthday = c & "." & b & "." & aEnd FunctionFunction abcd(ik2) As Stringa = Mid(ik2, 4, 2)If a = 1 Then    abcd = "Jaanuar"ElseIf a = 2 Thenabcd = "Veebruar"ElseIf a = 3 Thenabcd = "Marts"ElseIf a = 4 Thenabcd = "Aprill"ElseIf a = 5 Thenabcd = "Mai"ElseIf a = 6 Thenabcd = "Juuni"ElseIf a = 7 Thenabcd = "Juuli"ElseIf a = 8 Thenabcd = "August"ElseIf a = 9 Thenabcd = "September"ElseIf a = 10 Thenabcd = "Oktoober"ElseIf a = 11 Thenabcd = "November"ElseIf a = 12 Thenabcd = "Detsember"End IfEnd FunctionFunction abcd2(ik2) As Stringa = Mid(ik2, 2, 2)abcd2 = "19" & aEnd FunctionFunction owntask(Sm2, Vl, Scolourm2) As Integera = Scolourm2 / Vlowntask = a * Sm2End FunctionFunction newpi()
+    newpi = 3.14
+End Function
+
+Function doubl(arv As Double) As Double
+
+doubl = arv * 2
+
+End Function
+
+
+
+Function korrutis(arv1, arv2 As Double) As Double
+korrutis = Math.Round(arv1 * arv2, 3)
+'3 - p‰rast koma numbrite arv
+
+End Function
+
+
+Function kolmnurPindala(alus, korgus As Double) As Double
+    Const k = 1 / 2
+    kolmnurPindala = alus * korgus * k
+
+End Function
+
+Function kolmnurkPindala2(alus, korgus)
+    kolmnurkPindala2 = alus * korgus * 1 / 2
+    
+    
+End Function
+
+
+Function ilm(temp As Integer) As String
+
+If temp <= 15 Then
+    ilm = "kulm"
+    Else
+    ilm = "soe"
+End If
+
+
+
+
+End Function
+
+
+
+Function ilmabra(temp As Integer) As String
+
+If temp <= 15 Then
+    ilmabra = "kulm"
+    Else
+    If temp < 25 Then
+    ilmabra = "soe"
+    Else
+    If temp >= 25 Then
+    ilmabra = "palav"
+End If
+End If
+End If
+
+End Function
+
+
+Function hinne(punktid)
+If punktid >= 90 Then
+    hinne = "5"
+Else
+    If punktid >= 75 And punktid <= 89 Then
+        hinne = "4"
+    Else
+        If punktid >= 60 And punktid <= 74 Then
+            hinne = "3"
+        Else
+            If punktid < 60 Then
+                hinne = "2"
+            End If
+        End If
+    End If
+End If
+End Function
+
+
+
+Function hinne2(punktid, maxpunktid) As String
+Dim p As Double
+
+k = punktid * 100 / maxpunktid
+
+
+p = Math.Round(k, 2)
+
+
+If p >= 90 Then
+    hinne2 = Math.Round(p, 2) & "hinne 5"
+    
+ElseIf p >= 75 And p <= 89 Then
+        hinne2 = Math.Round(p, 2) & "hinne 4"
+    ElseIf p >= 60 And p <= 74 Then
+            hinne2 = Math.Round(p, 2) & "hinne 3"
+        ElseIf p < 60 Then
+                hinne2 = Math.Round(p, 2) & "hinne 2"
+End If
+End Function
+
+
+Function paarisArv(arv)
+
+If arv Mod 2 = 1 Then
+    paarisArv = "paaritu"
+Else
+    paarisArv = "paaris"
+End If
+
+End Function
+
+Function EsimeneTaht(tekst As String) As String
+
+    EsimeneTaht = Left(tekst, 1)
+
+
+End Function
+
+
+
+Function separ(tekst)
+
+separ = Left(tekst, InStr(tekst, " "))
+
+End Function
+
+
+
+
+Function separ2(tekst)
+
+separ2 = Right(tekst, Len(tekst) - InStr(tekst, " "))
+
+End Function
+
+
+Sub ZeroPosition()
+'Position zero
+Leht1.Shapes("Kenny").Top = 0
+Leht1.Shapes("Cartman").Top = 0
+Leht1.Shapes("Kenny").Left = 0
+Leht1.Shapes("Cartman").Left = 150
+Leht1.Shapes("Kenny").Width = 150
+Leht1.Shapes("Cartman").Width = 150
+Leht1.Shapes("Kenny").Height = 150
+Leht1.Shapes("Cartman").Height = 150
+Leht1.Shapes("Kenny").Rotation = 0
+Leht1.Shapes("Cartman").Rotation = 0
+Leht1.Shapes("Kenny").Visible = True
+Leht1.Shapes("Cartman").Visible = True
+
+End Sub
+
+Sub pause(a)
+a = Range("U1")
+Dim t
+t = Timer + a
+Do
+    DoEvents
+Loop Until Timer > t
+
+End Sub
+
+
+Sub DataFromCels()
+
+top1 = Range("N2")
+left1 = Range("N3")
+wid1 = Range("N4")
+rot1 = Range("N5")
+top2 = Range("O2")
+left2 = Range("O3")
+wid2 = Range("O4")
+rot2 = Range("O5")
+
+
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top + top1
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + left1
+Leht1.Shapes("Kenny").Width = Shapes("Kenny").Width + wid1
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation + rot1
+
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top + top2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + left2
+Leht1.Shapes("Cartman").Width = Shapes("Cartman").Width + wid2
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation + rot2
+
+
+End Sub
+
+
+Sub DoLoop()
+
+h = 200
+h2 = h / 2
+l = 100
+
+count1 = 0
+count2 = 0
+
+Do
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top - h2
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top + h
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top - h2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + l
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top - h2
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top + h
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top - h2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l
+count1 = count1 + 1
+Loop Until count1 = 5
+
+Do
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top - h2
+pause (a)
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top + h
+pause (a)
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top - h2
+pause (a)
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l
+pause (a)
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top - h2
+pause (a)
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top + h
+pause (a)
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top - h2
+pause (a)
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - l
+
+count2 = count2 + 1
+Loop Until count2 = 5
+
+End Sub
+
+Sub Dance()
+
+h = 100
+l = 50
+l2 = 100
+r = 30
+
+Leht1.Shapes("Kenny").Visible = False
+Leht1.Shapes("Cartman").Visible = False
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top + 500
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top + 500
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + 700
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + 700
+pause (a)
+Leht1.Shapes("Kenny").Visible = True
+Leht1.Shapes("Cartman").Visible = True
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top - h
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top - h
+pause (a)
+Leht1.Shapes("Kenny").Top = Shapes("Kenny").Top + h
+Leht1.Shapes("Cartman").Top = Shapes("Cartman").Top + h
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation - r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation + r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation + r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation - r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation - r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation + r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation + r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation - r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation + r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation - r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation - r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation + r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation + r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation - r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation - r
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation + r
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l2
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - l2
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + l2
+pause (a)
+Leht1.Shapes("Cartman").Width = Shapes("Cartman").Width + 15
+Leht1.Shapes("Cartman").Height = Shapes("Cartman").Height + 15
+Leht1.Shapes("Kenny").Width = Shapes("Kenny").Width + 15
+Leht1.Shapes("Kenny").Height = Shapes("Kenny").Height + 15
+pause (a)
+Leht1.Shapes("Cartman").Width = Shapes("Cartman").Width + 15
+Leht1.Shapes("Cartman").Height = Shapes("Cartman").Height + 15
+Leht1.Shapes("Kenny").Width = Shapes("Kenny").Width + 15
+Leht1.Shapes("Kenny").Height = Shapes("Kenny").Height + 15
+pause (a)
+Leht1.Shapes("Cartman").Width = Shapes("Cartman").Width + 15
+Leht1.Shapes("Cartman").Height = Shapes("Cartman").Height + 15
+Leht1.Shapes("Kenny").Width = Shapes("Kenny").Width + 15
+Leht1.Shapes("Kenny").Height = Shapes("Kenny").Height + 15
+pause (a)
+Leht1.Shapes("Cartman").Width = Shapes("Cartman").Width + 15
+Leht1.Shapes("Cartman").Height = Shapes("Cartman").Height + 15
+Leht1.Shapes("Kenny").Width = Shapes("Kenny").Width + 15
+Leht1.Shapes("Kenny").Height = Shapes("Kenny").Height + 15
+pause (a)
+Leht1.Shapes("Cartman").Width = Shapes("Cartman").Width + 15
+Leht1.Shapes("Cartman").Height = Shapes("Cartman").Height + 15
+Leht1.Shapes("Kenny").Width = Shapes("Kenny").Width + 15
+Leht1.Shapes("Kenny").Height = Shapes("Kenny").Height + 15
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + 1000
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - 1000
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left - 200
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left + 200
+pause (a)
+Leht1.Shapes("Kenny").Left = Shapes("Kenny").Left + 100
+Leht1.Shapes("Cartman").Left = Shapes("Cartman").Left - 100
+pause (a)
+Leht1.Shapes("Kenny").Rotation = Shapes("Kenny").Rotation + 90
+Leht1.Shapes("Cartman").Rotation = Shapes("Cartman").Rotation - 90
+pause (a)
+Leht1.Shapes("Kenny").Visible = False
+Leht1.Shapes("Cartman").Visible = False
+pause (a)
+MsgBox "Game over!"
+
+End Sub
+
+Sub elevant()
+MsgBox "Tere, päevast"
+vastus = InputBox("Osta elevant ära!")
+' dialog
+MsgBox ("Kõik ütlevad " & vastus & ", aga sina osta elevanti ära!")
+
+End Sub
+
+Sub elevant2()
+MsgBox "Tere, päevast"
+vastus = InputBox("Osta elevant ära!")
+' dialog
+vastus = InputBox("Osta elevanti ära" & vastus & ", aga IKKA osta ära!")
+
+MsgBox ("Kõik ütlevad " & vastus & ", aga sina osta elevanti ära!")
+
+End Sub
+
+Sub elevant4()
+'küsitakse kuni sõna elevant sisetamiseni
+
+vastus = InputBox("Osta elevant ära!", "Elevandimäng", "elevan")
+'cancel nupu vajutamine
+    If StrPtr(vastus) = 0 Then
+    Exit Sub
+    End If
+' dialog
+Do
+vastus = InputBox("Sa vastasid " & vastus & ", aga IKKA osta ära!")
+Loop Until vastus = "elevant"
+
+
+msg = MsgBox("Tubli, raha mulle, elevant sulle!", vbOKOnly, "Elevanimäng")
+
+End Sub
+
+
+Sub elevant5()
+'küsitakse kuni sõna elevant sisetamiseni või 3.korda
+'Loeb kokku vastusi
+
+
+vastus = InputBox("Osta elevant ära!", "Elevandimäng", "elevan")
+'cancel nupu vajutamine
+    If StrPtr(vastus) = 0 Then
+    Exit Sub
+    End If
+' dialog
+' Loendur
+arv = 0
+Do
+vastus = InputBox("Sa vastasid " & vastus & ", aga IKKA osta ära!")
+arv = arv + 1
+Loop Until (vastus = "elevant") Or (arv > 3)
+If vastus = "elevant" Then
+    msg = MsgBox("Tubli, raha mulle, elevant sulle!, sa ostsid " & arv & " korraga ", vbOKOnly, "Elevanimäng")
+    Else
+    msg2 = MsgBox("Sa tegid " & arv & " katset ja ei ostnud!", vbOKOnly, "Elevandimäng")
+
+End If
+End Sub
+
+
+
+Sub elevant6()
+
+
+' ole visakas!
+'küsitakse kuni sõna elevant sisetamiseni või 3.korda
+'Loeb kokku vastusi
+
+
+vastus = InputBox("Osta elevant ära!", "Elevandimäng", "")
+If vastus = "kurat" Then
+MsgBox "Ole visakas!"
+End If
+
+'cancel nupu vajutamine
+    If StrPtr(vastus) = 0 Then
+    Exit Sub
+    End If
+' dialog
+' Loendur
+arv = 0
+Do
+vastus = InputBox("Sa vastasid " & vastus & ", aga IKKA osta ära!")
+arv = arv + 1
+Loop Until (vastus = "elevant") Or (arv > 3)
+If vastus = "elevant" Then
+    msg = MsgBox("Tubli, raha mulle, elevant sulle!, sa ostsid " & arv & " korraga ", vbOKOnly, "Elevanimäng")
+    Else
+    msg2 = MsgBox("Sa tegid " & arv & " katset ja ei ostnud!", vbOKOnly, "Elevandimäng")
+
+End If
+End Sub
+
+
+Sub NimiKoheLahtriss()
+' B10 -lahtri aadress
+kysimus = MsgBox("Kas sa oled töörööbik?", vbYesNo, "Töörööbik")
+
+If kysimus = vbYes Then
+    nimi = InputBox("sisesta töörööbiku nimi; ", "Töörööbiku nimi", "Irina")
+' leth1.B10
+    Worksheets(1).Range("B10").Value = nimi
+    Worksheets(1).Range("B10").Borders.LineStyle = xlDouble
+    Else
+    MsgBox "Bye!"
+
+
+End If
+End Sub
+
+
+Sub test1()
+answ = MsgBox("Do you want sort a test", vbYesNo, "")
+
+tr = 0
+fl = 0
+
+
+
+
+If answ = vbYes Then
+quest1 = InputBox("2 + 2 * 2")
+If quest1 = "6" Then
+tr = tr + 1
+MsgBox "Right"
+Else: MsgBox "False"
+fl = fl + 1
+End If
+quest2 = InputBox("2+2")
+If quest2 = "4" Then
+MsgBox "Right"
+tr = tr + 1
+Else: MsgBox "False"
+fl = fl + 1
+End If
+quest3 = InputBox("3+3")
+If quest3 = "6" Then
+tr = tr + 1
+MsgBox "Right"
+Else: MsgBox "False"
+fl = fl + 1
+End If
+
+finish = MsgBox("Right answers: " & tr & " Wrong answers: " & fl)
+
+
+ElseIf answ = vbNo Then
+MsgBox "Bye!"
+End If
+End Sub
+
+Sub test2()
+
+
+answ = MsgBox("Do you want sort a test? It concludes 3 questions.", vbYesNo, "")
+
+tr = 0
+fl = 0
+
+nr = 0
+If answ = vbYes Then
+Do
+quest1 = InputBox("1 + 1")
+nr = nr + 1
+Loop Until (quest1 = "2") Or (nr > 3)
+
+nr2 = 0
+If quest1 = "2" Then
+tr = tr + 1
+Do
+quest2 = InputBox("5 + 5")
+nr2 = nr2 + 1
+Loop Until (quest2 = "10") Or (nr2 > 3)
+End If
+
+nr3 = 0
+If quest2 = "10" Then
+tr = tr + 1
+Do
+quest3 = InputBox("5 * 5")
+nr3 = nr3 + 1
+Loop Until (quest3 = "25") Or (nr3 > 3)
+If quest3 = "25" Then
+tr = tr + 1
+End If
+End If
+
+finishnr = nr + nr2 + nr3
+
+
+finish = MsgBox("Right answers " & tr & " of 3 and you did " & finishnr & " attempt(s)")
+
+
+ElseIf answ = vbNo Then
+MsgBox "Bye!"
+
+End If
+End Sub
+
+Sub punkt0()' alguspunkt (0;0)With Shapes("Donald")    .Left = 0    .Top = 0    .Height = 200    .Width = 200    .Rotation = 0End WithEnd SubSub paus(a)a = Range("L2")Dim tt = Timer + aDo    DoEventsLoop Until Timer > tEnd SubSub huppa()'1 hupp'Shapes("Donald").Top = Shapes("Donald").Top + 50paus (a)Shapes("Donald").Top = Shapes("Donald").Top - 50End SubSub huppaN()' huppe'h - hupe kırgush = Range("L3")Shapes("Donald").Top = Shapes("Donald").Top + hpaus (a)Shapes("Donald").Top = Shapes("Donald").Top - hEnd SubSub huppa3randomKırgusega()' 3 huppe h¸pe kırgus - random'RandomizeDim pryga = 10b = 100h = Rnd * (b - a) + a'declare prygDoShapes("Donald").Top = Shapes("Donald").Top + hpaus (a)Shapes("Donald").Top = Shapes("Donald").Top - hpaus (a)pryg = pryg + 1Loop Until pryg = 10End SubSub peida()' skrqvat' - kartinka ne vidnaShapes("Donald").Visible = FalseEnd SubSub n‰ita()' pokazat' - kartinka vidnaShapes("Donald").Visible = TrueEnd SubSub v‰iksem()'pilt vaiksemShapes("Donald").Width = Shapes("Donald").Width - 50Shapes("Donald").Height = Shapes("Donald").Height - 50End SubSub suurem()'pilt suuremShapes("Donald").Width = Shapes("Donald").Width + 50Shapes("Donald").Height = Shapes("Donald").Height + 50End SubSub keera()Shapes("Donald").IncrementRotation (20)'diagonalis liikumineShapes("Donald").IncrementLeft (10)Shapes("Donald").IncrementTop (10)End SubSub sisestajamaarab()x = InputBox("Kirjuta pilti x alguspunkt", "", "200")y = InputBox("Kirjuta pilti y alguspunkt", "", "200")laius = InputBox("Kirjuta pildi laius", "", "200")korgus = InputBox("Kirjuta pildi kırgus", "", "200")With Shapes("Donald")    .Left = x    .Top = y    .Width = laius    .Height = korgus    .Rotation = 0End With
+
+Private Sub CommandButton1_Click()UserForm.ShowEnd SubPrivate Sub Size_Change()End SubPrivate Sub ToggleButton1_Click()MyRow = ActiveCell.Row + nr        If Kass.Value = True Then        Cells(MyRow, 1).Value = "Kass"    Else        Cells(MyRow, 1).Value = "Koer"    End If            Cells(MyRow, 2) = NimiBox.Value    Cells(MyRow, 3) = SunniaegBox.Value    Cells(MyRow, 4) = Size.Value    UserForm.Hide    nr = nr + 1    Range("A" & ActiveCell.Row + 1).Select    End SubPrivate Sub ToggleButton2_Click()    Unload Me    UserForm.ShowEnd SubPrivate Sub UserForm_Initialize()SunniaegBox.Value = DateEnd Sub
+
+Sub Today()'' Today Makro''    Range("J19").Select    ActiveCell.FormulaR1C1 = "=TODAY()"    Range("J19").SelectEnd SubSub Delete_today()'' Delete_today Makro''    Range("J19").Select    Selection.ClearContentsEnd SubSub nadalapaevad()'' nadalapaevad Makro''    ActiveCell.FormulaR1C1 = "Monday"    Range("E8").Select    Selection.AutoFill Destination:=Range("E8:E12"), Type:=xlFillDefault    Range("E8:E12").Select    Selection.AutoFill Destination:=Range("E8:E14"), Type:=xlFillDefault    Range("E8:E14").Select    With Selection.Interior        .Pattern = xlSolid        .PatternColorIndex = xlAutomatic        .Color = 65535        .TintAndShade = 0        .PatternTintAndShade = 0    End WithEnd SubSub ptre()a = Range("alg")b = Range("lpp")cnt = ac = a * aDoa = a + 1c = c + (a * a)cnt = cnt + 1Loop Until cnt = b
+
+
+Sub arvuti()   aasta = InputBox("Mis aastal loodi personaalarvuti?")      If aasta = 1976 Then   teade = "’ige!"   Else:   teade = "Vale!"   MsgBox (teade)   End IfEnd Sub
+
+Sub ptre()a = Range("alg")b = Range("lpp")cnt = ac = a * aDoa = a + 1c = c + (a * a)cnt = cnt + 1Loop Until cnt = b
+
+
+Sub M‰lum‰ng()  Dim k, aasta, teade  MsgBox "Mis aastal loodi esimene mikroprotsessor?"  k = 0  ' Omistab katsete loendurile algv‰‰rtuse 0  Do  '  Korduse algus    aasta = InputBox("Sisesta aasta") ' Loeb sisendboksist arvu    If StrPtr(aasta) = 0 Then    Exit Sub    End If        k = k + 1  '  Suurendab katsete loenduri ¸he vırra    If aasta = 1971 Then Exit Do ' Kui ıige vastus, siis lıpetab kordamise    If aasta < 1971 Then teade = "V‰he!" Else teade = "Palju!"    MsgBox teade  Loop  '  Korduse lıpp  MsgBox "’ige! Katseid oli " & kEnd Sub
+
+Sub qwerty()   P = (Range("B3") + Range("B4") + Range("B5")) / 2   S = Sqr(P * (P - Range("B3")) * (P - Range("B4")) * (P - Range("B5")))   raadius = S / P   Range("B8") = S   Range("B7") = raadiusEnd Sub'   Prisma sisesilindri t‰ispindala   ja ruumala.Sub Prisma()   Const pi = 3.14159  ' Konstanti pi VBAs pole' ----- Algandmete lugemine tˆˆlehelt -----   a = Range("a"):   b = Range("b")   c = Range("abra"):   h = Range("h")'  ----- Arvutused -------------------------------   P = (a + b + c) / 2   Sk = Sqr(P * (P - a) * (P - b) * (P - c))   r = Sk / P   S = 2 * pi * r * (r + h)   qwer = pi * r * r * h     ' ----- Tulemite kirjutamine tˆˆlehele --------   Range("Pindala") = S   Range("Ruumala") = qwer  End SubSub FunTab()   a = Range("algus")   b = Range("lıpp")   n = Range("jaotisi")   h = (b - a) / n   Range("A6:B106").Clear   For i = 0 To n      x = a + i * h      y = 3 * Sin(2 * x) - Cos(x / 3)      Cells(i + 6, 1) = x      Cells(i + 6, 2) = y   Next iEnd SubSub Test1()  a = InputBox("a", , 20)  If a = "" Then End  b = InputBox("b", , 10)  If b = "" Then End  c = (Int(a) + Int(b)) / 2  MsgBox "Keskmine=" & cEnd SubPublic Function pindala(a As Double)If a > 0 Then    pindala = ((a * a) / 4) * Sqr(25 + 10 * Sqr(5))    Else    pindala = "Incorrect inserted number"End IfEnd FunctionPublic Function tutvustus()t = InputBox("Enter your name")If t <> "" Thentutvustus = "WELCOME" & " " & tElsetutvustus = "No people"End IfEnd FunctionPublic Function tulumaks(palk As Double) As Double    If palk <= 1200 Then    tulumaks = (palk - 654) * 0.2    Else    tulumaks = palk * 0.2    End If    End FunctionPublic Function valgusfoor(varv As String)If varv = "red" Then    valgusfoor = "stop"    ElseIf varv = "green" Then    valgusfoor = "Go!"    ElseIf varv = "yellow" Then    valgusfoor = "Get ready!"    Else    valgusfoor = "Broken"End IfEnd FunctionPublic Function y(x As Double) As DoubleIf x <= 0 Then    y = Sin(2 * x) + 3    Else    y = Cos(3 * x - 2)    End IfEnd FunctionPublic Function Ruudvorrand(a, b, c)d = b * b - 4 * a * cIf d > 0 Then    Ruudvorrand = Round(((-b + Sqr(d)) / (2 * a)), 2) & "/" & Round(((-b - Sqr(d)) / 2 * a), 2)    ElseIf d = 0 Then    Ruudvorrand = Round(-b / 2 * a, 2)    Else    Ruudvorrand = "No move"    End IfEnd FunctionPublic Function Postiindex(index As String)If Left(index, 1) = 1 Then    Postiindex = "Tallinn"    ElseIf Left(index, 1) = 2 Then    Postiindex = "Narva, NarvaJoesuu"    ElseIf Left(index, 1) = 3 Then    Postiindex = "Kohtla-Jarve"    ElseIf Left(index, 1) = 4 Then    Postiindex = "Ida-Viirumaa"    ElseIf Left(index, 1) = 5 Then    Postiindex = "Tartu linn"    ElseIf Left(index, 1) = 6 Then    Postiindex = "Tartumaa, Polvomaa, Vorumaa, Valgamaa"    ElseIf Left(index, 1) = 7 Then    Postiindex = "Viljandimaa, Jarvamaa, Harjumaa, Raplamaa"    ElseIf Left(index, 1) = 8 Then    Postiindex = "Parnumaa"    ElseIf Left(index, 1) = 9 Then    Postiindex = "Lanemaa, Hiiumaa, Saaremaa"End IfEnd FunctionPublic Function Hooaeg(date1 As Date)If Mid(date1, 4, 2) = 1 Or Mid(date1, 4, 2) = 2 Or Mid(date1, 4, 2) = 12 ThenHooaeg = "Winter"    ElseIf Mid(date1, 4, 2) = 3 Or Mid(date1, 4, 2) = 4 Or Mid(date1, 4, 2) = 5 Then    Hooaeg = "Spring"    ElseIf Mid(date1, 4, 2) = 6 Or Mid(date1, 4, 2) = 7 Or Mid(date1, 4, 2) = 8 Then    Hooaeg = "Summer"    ElseIf Mid(date1, 4, 2) = 9 Or Mid(date1, 4, 2) = 10 Or Mid(date1, 4, 2) = 11 Then    Hooaeg = "Autumn"End IfEnd FunctionPublic Function soodus()a = InputBox("Enter your status")If a = "Child" Thensoodus = "50%"    ElseIf a = "Student" Then    soodus = "40%"    ElseIf a = "HighSchool student" Then    soodus = "20%"    ElseIf a = "Employee" Then    soodus = "10%"    ElseIf a = "Retired" Then    soodus = "80%"End IfEnd FunctionPublic Function F(x As Double)If x <= 0 Then    F = 0    ElseIf x > 0 And x <= 3 Then    F = 1 / 9 * Sqr(x)    ElseIf x > 3 Then    F = 1End IfEnd Function
+
+
+
+
